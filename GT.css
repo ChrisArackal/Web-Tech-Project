@@ -1,0 +1,137 @@
+* { box-sizing: border-box;
+}
+header, nav, main, footer{display: block;
+}
+body{background-color: #000000;
+    color:#ffffff;
+	  font-family: Verdana,Arial,sans-serif;
+}
+header{background-color: #000000;
+    height: 75px;
+	  color: #ff0000;
+}
+h1{text-align: center;
+    font-size: 3em;
+}
+nav {background-color: #000080;
+    letter-spacing: 0.1em;
+	  font-weight: bold;
+	  text-align: center;
+}
+nav ul { list-style-type: none;
+    margin: 0;
+}
+nav li {padding: 0.5em;
+    display: inline-block;
+}
+nav a { text-decoration: none;
+    display: block;
+}
+nav a:link { color: #32cd32; }
+nav a:visited { color: #32cd32; }
+nav a:hover {  color: #ffffff;}
+nav ul ul { position: absolute;
+    background-color: #808080;
+    padding: 0;
+    display: none;
+		text-align: left;
+}
+nav ul ul li { border: 1px solid  #000080;
+    display: block;
+    width: 9em;
+}
+nav li:hover ul { display: block; }
+footer{background-color: #000000;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	border-top: solid 2px #ff0000;
+  padding-top: 1px;
+  color: #ff0000;
+}
+footer a {color: #ff0000;
+}
+footer a:hover {color: #ffffff;
+}
+#homepic{background-image: url(pictures/homepic.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: space;
+    height: 250px;
+    width: auto;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#000080;	/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#000000;	/* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#000080;	/* left column background colour */
+}
+.threecol .col1 {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:21%;			/* Width of left column content (column width minus padding on either side) */
+	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+  font-size: 2em;
+  color: #32cd32;
+}
+.threecol .col3 {
+	width:21%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;
+  font-size: 2em;
+  color: #32cd32;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+table{background-color: #ff0000;
+	width: 90%;
+	margin: auto;
+	border-spacing: 0;
+  border: 1px solid #ffffff;
+}
+th{padding: 10px;
+}
+td{padding: 10px;
+}
+tr:nth-of-type(odd){background-color: #000000;
+}
+label {float: left;
+    display: block;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea {display: block;
+    margin-bottom: 1em;
+}
